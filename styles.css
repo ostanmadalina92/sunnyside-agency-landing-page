@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=DM+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1440px;
+}
+
+/* Header */
+
+header {
+  height: 100vh;
+  background-image: url("./images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: white;
+}
+
+#menu {
+  display: none;
+}
+
+.main-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  margin-top: 160px;
+}
+
+.main-heading img {
+  width: 3rem;
+  margin-top: 50px;
+}
+
+.main-heading img:hover {
+  animation: jump-down 2s ease infinite;
+}
+@keyframes jump-down {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+
+  12.5%,
+  37.5% {
+    transform: translateY(20px);
+  }
+
+  25% {
+    transform: translateY(10px);
+  }
+}
+
+.main-heading h1 {
+  font-size: 3rem;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.5rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+header li {
+  margin: 0 1.2rem;
+}
+
+header li:nth-child(4) {
+  margin-right: 0;
+}
+
+header li:nth-child(4) a {
+  padding: 0.7rem 1rem;
+  color: hsl(212 27% 19%);
+  background-color: hsl(0 0% 100%);
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.3s;
+  font-family: "Fraunces", serif;
+  font-size: 0.8rem;
+}
+
+header li:nth-child(4) a:hover {
+  background-color: hsla(0, 0%, 100%, 0.37);
+  color: hsl(0, 0% 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main */
+
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.rows {
+  display: flex;
+}
+
+.rows div {
+  flex-basis: 100%;
+}
+
+.services img {
+  width: 100%;
+  height: 100%;
+}
+
+.graphic .pic,
+.photography .pic {
+  position: relative;
+}
+
+.show-not {
+  display: none;
+}
+.graphic-text,
+.photography-text {
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  text-align: center;
+  margin-top: 25%;
+  padding: 2% 14%;
+}
+
+.graphic .graphic-text h2,
+.graphic .graphic-text p {
+  color: hsl(167, 40%, 24%);
+}
+
+.photography .photography-text h2,
+.photography .photography-text p {
+  color: hsl(198, 62%, 26%);
+}
+.stand-text,
+.transform-text {
+  text-align: left;
+  max-width: 50%;
+  padding: 12% 10%;
+  align-items: center;
+}
+
+.rows h2 {
+  font-family: "Fraunces";
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+}
+
+.rows p {
+  font-family: "Barlow" sans-serif;
+  padding: 40px 0;
+  color: hsl(213, 9%, 39%);
+}
+
+.rows h3 {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: medium;
+  text-transform: uppercase;
+}
+
+.rows button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.rows .transform-text button {
+  border-bottom: 3px solid #fad400;
+}
+.rows .stand-text button {
+  border-bottom: 3px solid #fe7867;
+}
+.testimonials-people {
+  display: flex;
+  flex-direction: row;
+}
+.testimonials-people div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 8rem;
+}
+.testimonials h2 {
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  color: hsl(210, 4%, 67%);
+}
+
+.testimonials picture img {
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
+}
+
+.quote {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.job-title {
+  padding-top: 0.5rem;
+  color: hsl(210, 4%, 67%);
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: hsl(167, 44%, 78%);
+  font-size: 0.8rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer a,
+footer nav ul li a {
+  color: hsl(168, 34%, 41%);
+}
+
+footer nav ul,
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.icons {
+  list-style-type: none;
+  font-size: 23px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 500px) {
+
+  .mobile-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .services .rows {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation nav {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+
+  header {
+    background-image: url("./images/mobile/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .main-heading h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .main-heading {
+    margin-top: 85px;
+  }
+
+  .show-not {
+    display: block;
+  }
+  .show {
+    display: none;
+  }
+
+  .stand-text,
+  .transform-text {
+    text-align: center;
+    max-width: 100%;
+    padding: 12% 18%;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  .rows p {
+    font-size: 1.2rem;
+  }
+
+  .graphic-text,
+  .photography-text {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    margin-top: 110%;
+    padding: 2% 12%;
+  }
+
+  .testimonials-people {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
