@@ -17,26 +17,35 @@
   <body>
     <header>
       <div class="mobile-header">
-      <div class="navigation">
-        <a href="index.html"><img src="./images/logo.svg" alt="" /></a>
-        <nav>
-          <ul>
+        <div class="navigation">
+          <a href="index.html"><img src="./images/logo.svg" alt="" /></a>
+          <nav>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="hidden" id="mobile-menu">
+          <ul class="menu-list">
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-        </nav>
-      </div>
+        </div>
 
-      <div>
-        <img
-          src="images/icon-hamburger.svg"
-          alt="hamburger"
-          class="mobile-menu"
-          id="menu"
-        />
-      </div>
+        <div>
+          <img
+            src="images/icon-hamburger.svg"
+            alt="hamburger"
+            class="mobile-menu"
+            id="menu"
+          />
+        </div>
       </div>
 
       <div class="main-heading">
@@ -44,18 +53,6 @@
         <img src="./images/icon-arrow-down.svg" alt="icon arrow down" />
       </div>
     </header>
-
-    <!--  <div class="mobile-nav" id="mobileNav">
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  -->
 
     <main>
       <section class="services">
@@ -338,4 +335,5 @@
       </div>
     </footer>
   </body>
+  <script src="index.js"></script>
 </html>
